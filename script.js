@@ -9,7 +9,6 @@ const blackKeys = document.querySelectorAll('.key.black')
 keys.forEach(key => {
     key.addEventListener('click', () => playNote(key))
 })
-
 document.addEventListener('keydown', e => {
     if(e.repeat) return
     const key = e.key
